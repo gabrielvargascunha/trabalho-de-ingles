@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+  
+</head>
+<body>
+    <div class="background-serie">
+        <header>
+            <div class="logo">
+                <img class="logo" src="https://occ-0-2794-2219.1.nflxso.net/dnm/api/v6/tx1O544a9T7n8Z_G12qaboulQQE/AAAABcv3ieX1E6ZY38DoOhI8Xoyk4EpZgdqNIg4QGpkyT3egj8eS6jbOGc7O_g7oT-v7yfH7fNOnd3Z_HOLuBEvZEPAe3PYWTSuexBzSKemM9MCRla7_PZnpG8owtODI3FLcB_5m85ciP_HKxNBM65HxhfrHscsQdCVWjoQbtT8naKVAZrmtqR5oeg.png?r=05a" alt="">
+            </div>
+            <nav>
+                <li>
+                    <a href="#">Episodes</a>
+                </li>
+                <li>
+                    <a href="index.html">About</a>
+                </li>
+                <li>
+                    <a href="opinion.html">my Opinion</a>
+                </li>
+                
+            </nav>
+            <div class="onde-assistir">
+                <a href="https://www.netflix.com/search?q=explica&jbv=81345769"><button >WATCH HERE</button></a>
+                
+
+            </div>
+        </header>
+        <div class="meio-container">
+            <div class="carousel">
+                <div class="carousel-content">
+                    <div class="carousel-item">
+                        <h1>MONEY </h1>
+                        <p>Este episódio introdutório explora o conceito de dinheiro, desde suas origens até seu papel na sociedade moderna. Ele aborda questões como a história do dinheiro, como ele é criado pelos bancos centrais, e como funciona o sistema bancário atual..</p>
+                    </div>
+                    <div class="carousel-item">
+                        <h1>Cryptocurrencies</h1>
+                        <p>This episode deals with cryptocurrencies like Bitcoin and Ethereum, exploring their emergence, how they function, and their potential impact on the traditional financial system. It covers topics such as blockchain, cryptocurrency mining, and their role as an alternative to traditional money.</p>
+                    </div>
+                    <div class="carousel-item">
+                        <h1>Income Inequality</h1>
+                        <p>In this episode, the series examines income inequality, exploring its causes and consequences. It discusses how income inequality affects society and the role that government policies can play in reducing this disparity</p>
+                    </div>
+                    <div class="carousel-item">
+                        <h1>Market Economy</h1>
+                        <p>This episode explores how the market economy works, highlighting its fundamental principles and how it influences people's lives worldwide. It also addresses issues such as competition, supply and demand, and how governments intervene in the economy.</p>
+                    </div>
+                    <div class="carousel-item">
+                        <h1>Stock Market</h1>
+                        <p>In this episode, the series investigates how the stock market works, explaining how companies are listed, how stocks are traded, and how investors can profit from the stock market.</p>
+                    </div>
+                    <div class="carousel-item">
+                        <h1>Credit and Cards</h1>
+                        <p>This episode covers credit and credit cards, exploring how they work, the risks associated with debt, and how credit card companies profit</p>
+                    </div>
+                    <div class="carousel-item">
+                        <h1>Financial Frauds</h1>
+                        <p>In this episode, the series explores different types of financial fraud, from pyramid schemes to bank fraud, and how consumers can protect themselves against them.</p>
+                    </div>
+                    <div class="carousel-item">
+                        <h1>Taxes</h1>
+                        <p>This episode discusses the tax system, explaining how income, consumption, and property taxes work, and how they are used to finance public services.</p>
+                    </div>
+                
+
+                </div>
+                <div class="carousel-controls">
+                    <button class="prev">❮</button>
+                    <button class="next">❯</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        const prevButton = document.querySelector('.prev');
+        const nextButton = document.querySelector('.next');
+        const carouselContent = document.querySelector('.carousel-content');
+        const totalItems = document.querySelectorAll('.carousel-item').length;
+
+        let index = 0;
+
+        function showItem(index) {
+            const offset = -index * 100;
+            carouselContent.style.transform = `translateX(${offset}%)`;
+        }
+
+        prevButton.addEventListener('click', () => {
+            index = (index > 0) ? index - 1 : totalItems - 1;
+            showItem(index);
+        });
+
+        nextButton.addEventListener('click', () => {
+            index = (index < totalItems - 1) ? index + 1 : 0;
+            showItem(index);
+        });
+    </script>
+</body>
+</html>

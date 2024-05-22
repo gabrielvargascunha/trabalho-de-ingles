@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap');
+
+*{
+    margin: 0%;
+    font-family: inter;
+    padding: 0;
+    list-style: 0;
+    text-decoration: none;
+
+}
+
+.background-serie{
+    background: rgba(3,0,12, 0.7) url(assets/Explicando-dinheiro.jpg);
+    background-blend-mode: darken;
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    max-width: 100%;
+
+}
+button{
+    cursor: pointer;
+}
+.logo{
+    width: 50vh;
+    height: auto;
+}
+nav{
+    display: flex;
+    gap: 35px;
+    font-size: 14px;
+}
+nav a{
+    color: #fff;
+    font-weight: 500;
+    font-size: 17px;
+    text-decoration: none;
+}
+nav li{
+    list-style-type:none ;
+}
+.onde-assistir{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+.onde-assistir button{
+    background-color: #da2535;
+    padding: 10px;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+}
+.onde-assistir a{
+    color: #fff;
+    font-size: 18px;
+} 
+header{
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    align-items: center;
+    text-align: center;
+    gap: 10rem;
+}
+.meio-container{
+margin-left: 14%;
+margin-top:12% ;
+max-width: 100%;
+}
+
+.meio-dinheiro h1{
+    color: #fff;
+    font-size: 68px;
+}
+.meio-dinheiro p{
+    color: #f9f9f9;
+    font-size: 17px;
+    font-style:italic;
+    font-weight: 500;
+    margin-top: 1rem;
+    line-height: 25px;
+}
+
+.carousel {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    height: 400px;
+}
+
+.carousel-content {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+.carousel-item h1{
+    color: #fff;
+    font-size: 68px;
+}
+.carousel-item p{
+    color: #f9f9f9;
+    font-size: 17px;
+    font-style:italic;
+    font-weight: 500;
+    margin-top: 1rem;
+    line-height: 25px;
+}
+
+.carousel-controls {
+    position: absolute;
+    top: 50%;
+    width: 100vh;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.carousel-controls button {
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    pointer-events: all; /* Ativar clique apenas nos botões */
+    height: 40px; /* Ajustar a altura do botão */
+    width: 40px; /* Ajustar a largura do botão */
+    border-radius: 50%; /* Fazer os botões redondos */
+    margin: 0 20px; /* Adicionar margem aos botões */
+}
+
+/* Ajustando a posição dos botões fora do carrossel */
+.carousel-controls .prev {
+    left: 60px; /* Ajustando a posição do botão à esquerda */
+}
+
+.carousel-controls .next {
+    right: -60px; /* Ajustando a posição do botão à direita */
+}
